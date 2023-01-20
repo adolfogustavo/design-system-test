@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": [
+    "src/*",
+    "**/*.ts",
+    "**/*.tsx",
+    ".storybook/main.js"
+  ],
+  "exclude": ["node_modules"],
+}
