@@ -2,8 +2,6 @@
 
 1.  **Install dependencies**
 
-    Use [degit](https://github.com/Rich-Harris/degit) to get this template.
-
     ```shell
     yarn
     ```
