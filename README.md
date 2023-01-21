@@ -1,10 +1,9 @@
-## 🚅 Clone the repository
+## 🚅 After cloning the repository
 
 1.  **Install dependencies**
 
     ```shell
     yarn
-    ```
     ```
 
 2.  **Open the source code and start editing!**
