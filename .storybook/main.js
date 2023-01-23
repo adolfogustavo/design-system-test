@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   stories: ["../src/components/**/*.stories.tsx"],
   staticDirs: ["../public"],
@@ -22,5 +24,13 @@ module.exports = {
       shouldExtractLiteralValuesFromEnum: true,
       propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
     },
+  },
+  webpackFinal: async (config) => {
+    config.resolve.modules = [
+      ...(config.resolve.modules || []),
+      path.resolve(__dirname, "../src"),
+    ];
+
+    return config;
   },
 };
